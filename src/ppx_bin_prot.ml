@@ -41,8 +41,6 @@ module Ppxlib_jane = struct
         | [], _ -> None, carg
         | _ :: _, ptyp_attributes -> Some Global, { carg with ptyp_attributes }
       ;;
-
-      let coalesce_fun_arity x = x
     end
   end
 end
